@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/mode.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/destaques.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="/start/assets/img/logo.png" alt="logo">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="destaques.html" class="nav-link">Destaques</a></li>
+                    <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+                    <li class="nav-item"><a href="us.html" class="nav-link">Sobre nós</a></li>
+                </ul>
+            </div>
+            <div class="dark-mode-icon">
+                <i class="bi bi-brightness-high-fill" id="toggleDark"></i>
+            </div>
+            <div class="btn">
+                <a href="../start/login.html"><button class="login-btn">Login</button></a>
+                <a href="../start/cadastro.html"> <button class="cadastro-btn">Cadastro</button></a>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt="icon"></button>
+            </div>
+    
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="destaques.html" class="nav-link">Destaques</a></li>
+                <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+                <li class="nav-item"><a href="us.html" class="nav-link">Sobre nós</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+     var docWidth = document.documentElement.offsetWidth;
+     [].forEach.call(
+         document.querySelectorAll('*'),
+         function(el) {
+             if (el.offsetWidth > docWidth) {
+                 console.log(el);
+             }
+         }
+     );
+ });
+ </script>
+
+    <section>
+            
+        <div class="destaque">
+ 
+         <section class="txt-first">
+ 
+             <h3>O que é economia criativa?</h3>
+     
+             <p>Economia Criativa é um termo criado para nomear modelos de negócio ou gestão que se originam em atividades, produtos ou serviços desenvolvidos a partir do conhecimento, criatividade ou capital intelectual de indivíduos com vistas à geração de trabalho e renda.</p>
+     
+         </section>
+ 
+         <section class="txt-second">
+
+            <div class="txt-second-container">
+                         
+           <img id="img-txt-second" src="assets/img/economia.jpg" alt="img1">
+
+           <div class="txt-second-itens">
+            
+           <p>Diferentemente da economia tradicional, de manufatura, agricultura e comércio, a economia criativa, essencialmente, foca no potencial individual ou coletivo para produzir bens e serviços criativos. De acordo com as Nações Unidas, as atividades do setor estão baseadas no conhecimento e produzem bens tangíveis e intangíveis, intelectuais e artísticos, com conteúdo criativo e valor econômico.</p>
+
+           <p>Grande parte dessas atividades vem do setor de cultura, moda, design, música e artesanato. Outra parte é oriunda do setor de tecnologia e inovação, como o desenvolvimento de softwares, jogos eletrônicos e aparelhos de celular. Também estão incluídas as atividades de televisão, rádio, cinema e fotografia, além da expansão dos diferentes usos da internet (desde as novas formas de comunicação até seu uso mercadológico), por exemplo.</p>
+
+            </div>
+ 
+         </section>
+ 
+         </div>
+         </section>
+ 
+         <section id="blog">
+ 
+             <div class="cards_blog">
+ 
+                 <h3>Conteúdos do blog</h3>
+     
+                 <hr>
+     
+                 <div class="cards">
+     
+                     <div class="card" id="card1">
+     
+                         <a href="#profissoes">profissões</a>
+     
+                     </div>
+                     <div class="card" id="card2">
+     
+                        <a href="#relevancia-economia">impacto na economia</a>
+     
+                     </div>
+                     <div class="card" id="card3">
+     
+                        <a href="#impacto-social">responsabilidade social</a>
+     
+                     </div>
+                     <div class="card" id="card4">
+     
+                        <a href="#noticias">jornadas Inspiradoras</a>
+     
+                     </div>
+                 </div>
+ 
+             </div>
+ 
+             <h2 id="profissoes">Principais profissões</h2>
+ 
+             <section class="profissoes">
+ 
+                 <div class="txt-block">
+ 
+                     <div class="design">
+ 
+                         <img id="img-design" src="assets/img/design.png" alt="design">
+     
+                         <h4>Designer Gráfico</h4>
+     
+                         <p> Os designers gráficos são responsáveis por criar elementos visuais que comunicam mensagens ou ideias de forma eficaz e atraente. Eles trabalham em uma variedade de mídias, como impressão, web, publicidade, embalagens e muito mais. Os designers gráficos precisam de habilidades artísticas e técnicas para criar layouts, logotipos, ilustrações e imagens que cativem o público-alvo.</p>
+     
+                     </div>
+ 
+                     <div class="influencer">
+ 
+                         <img id="img-influencer" src="assets/img/influencer.png" alt="influencer">
+     
+                         <h4>Produtor de Conteúdo Digital</h4>
+     
+                         <p>Produtores de conteúdo digital criam e gerenciam conteúdo online, que pode incluir texto, imagens, vídeo, áudio e mídias interativas. Eles atendem a diversas plataformas, como blogs, redes sociais, vídeos no YouTube e podcasts. Os produtores de conteúdo digital precisam ser criativos e ter habilidades de escrita, edição de vídeo, design gráfico e marketing digital para envolver seu público.</p>
+     
+                     </div>
+                 </div>
+ 
+ 
+                     <div class="txt-block">
+ 
+                         <div class="visual">
+     
+                             <img id="img-visual" src="assets/img/artista-visual.png" alt="artista">
+         
+                             <h4>Artista Visual</h4>
+         
+                             <p>Artistas visuais englobam uma variedade de disciplinas, como pintura, escultura, fotografia, desenho e arte digital. Eles criam obras de arte que podem ser exibidas em galerias, vendidas como peças únicas ou em séries, ou mesmo incorporadas em projetos criativos em outros setores, como publicidade, cinema e design de interiores. A criatividade, a técnica e a expressão pessoal desempenham um papel fundamental no trabalho de um artista visual..</p>
+         
+                         </div>
+     
+                         <div class="cinema">
+     
+                             <img id="img-cinema" src="assets/img/cinema.png" alt="cinema">
+         
+                             <h4>Roteirista de Cinema e TV</h4>
+         
+                             <p> Os roteiristas de cinema e TV são responsáveis por desenvolver histórias, diálogos e estruturas de narrativas para filmes, programas de televisão e até mesmo produções online. Eles desempenham um papel crucial na criação de conteúdo audiovisual envolvente e emocionante. A habilidade de contar histórias, criar personagens cativantes e dominar a estrutura narrativa são essenciais para o sucesso nessa profissão.</p>
+         
+                         </div>
+                     </section>
+ 
+                 <section class="economia" id="relevancia-economia">
+ 
+                     <div class="txt-third">
+                         
+             <h3>Qual a importancia economia criativa?</h3>
+     
+             <p>A economia criativa desempenha um papel vital no avanço econômico, impulsionando a inovação, gerando empregos e diversificando setores como design, artes e tecnologia. Ao fomentar a criação e valorização de ativos intangíveis, como propriedade intelectual, ela não apenas aumenta receitas, mas também fortalece a identidade cultural. Investir nessa abordagem não só impulsiona o crescimento econômico, mas também posiciona uma nação como um centro dinâmico e inovador, promovendo a prosperidade sustentável.</p>
+                     </div>
+ 
+                     <div class="descricao">
+ 
+                         <h3>Tendências e Impactos: O Panorama da Economia Criativa em 2022 pela UNCTAD</h3>
+                         <p id="p-desc">A UNCTAD lançou o Creative Economy Outlook de 2022, uma pesquisa abrangente com 33 nações. O relatório destaca a importância da economia criativa para o progresso social, político e econômico global, destacando arranjos institucionais, planos nacionais e estratégias governamentais.</p>
+
+                         <span>(porcentacem de participaçao com o PIB mundial)</span>
+                         </div>
+ 
+                         <div class="info">
+
+                             <div class="porcentagens">
+
+                                <div class="line1">
+                                    <div class="dados">
+                                        <h4>2,1%</h4>
+                                        <p>2004</p>
+                                    </div>
+                                    <div class="dados">
+                                        <h4>2,6%</h4>
+                                        <p>2017</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="line2">
+                                    <div class="dados">
+                                        <h4>2,9%</h4>
+                                        <p>2020</p>
+                                    </div>
+                                    <div class="dados">
+                                        <h4>3,1%</h4>
+                                        <p>2022</p>
+                                    </div>
+                                </div>
+
+                             </div>
+ 
+                            </div>
+                 </section>  
+ 
+                 <section class="sociedade" id="impacto-social">
+ 
+                     <div class="txt-fourth">
+ 
+            <h3>Responsabilidade Social</h3>
+
+             <p>Na economia criativa, a responsabilidade social é fundamental para assegurar que a criatividade e inovação não surjam à custa de princípios éticos, da preservação ambiental ou da marginalização de comunidades.</p>
+ 
+             <p class="p-second-fourth">A responsabilidade social na economia criativa inclui a promoção da diversidade, a utilização de práticas sustentáveis, a produção  de conteúdos éticos, a garantia da acessibilidade cultural e o desenvolvimento de comunidades. Estes princípios garantem que a economia criativa beneficia tanto as entidades económicas envolvidas como  a sociedade como um todo.</p>
+ 
+                     </div> 
+
+                     <div class="fourth-img">
+                        <img src="/start/assets/img/responsabilidade.png" alt="responsabilidade-mundo-dinheiro">
+                    </div>
+ 
+                 </section> 
+ 
+          <section class="inspiracoes" id="noticias">
+ 
+             <div class="inspiracoes-container">
+ 
+                 <h3>Jornadas Inspiradoras</h3>
+ 
+                 <hr>
+
+                 <div class="links-card">
+
+                    <div class="link-card">
+                        <img id="link-img1" src="/start/assets/img/noticia1.png" alt="noticia-santos">
+                        <div class="card__content">
+                          <p class="card__title">Economia criativa cresce e gera cada vez mais oportunidades em Santos e no País</p>
+                            <a href="https://www.santos.sp.gov.br/?q=noticia/economia-criativa-cresce-e-gera-cada-vez-mais-oportunidades-em-santos-e-no-pais"><button class="lerMais-btn">Ler mais</button></a>
+                        </div>
+                      </div>   
+    
+                      <div class="link-card">
+                        <img id="link-img2" src="/start/assets/img/noticia2.png" alt="noticia-itau">
+                        <div class="card__content">
+                          <p class="card__title">Fundação Itaú mede a Economia Criativa e resultado surpreende: 3,11% do PIB</p>
+                          <a href="https://exame.com/exame-in/fundacao-itau-mede-a-economia-criativa-e-resultado-surpreende-311-do-pib/"><button class="lerMais-btn">Ler mais</button></a>
+                        </div>
+                      </div> 
+    
+                      <div class="link-card">
+                        <img id="link-img3" src="/start/assets/img/noticia3.png" alt="noticia-moda">
+                        <div class="card__content">
+                          <p class="card__title">Fashion Revolution: Como o movimento busca justiça e transparência na moda</p>
+                          <a href="https://exame.com/esg/fashion-revolution-como-o-movimento-busca-justica-e-transparencia-na-moda/"><button class="lerMais-btn">Ler mais</button></a>
+                        </div>
+                      </div> 
+    
+                      <div class="link-card">
+                        <img id="link-img4" src="/start/assets/img/noticia4.png" alt="noticia-kombi">
+                        <div class="card__content">
+                          <p class="card__title">Com Kombi de capacitação nas comunidades, Porto Alegre lança programa pioneiro de Economia Criativa</p>
+                          <a href="https://gauchazh.clicrbs.com.br/porto-alegre/noticia/2021/10/com-kombi-de-capacitacao-nas-comunidades-porto-alegre-lanca-programa-pioneiro-de-economia-criativa-ckurg0h8y00c5019mmcalzosk.html"><button id="btn4" class="lerMais-btn">Ler mais</button></a>
+                        </div>
+                      </div> 
+                 </div>
+               
+                  </div>
+             </section> 
+ 
+            </section>
+        
+     </main>
+ 
+     <footer>
+ 
+         <div id="footer_content">
+ 
+             <div id="footer_contacts">
+                 <h1>Logo</h1>
+                 <p>Acompanhes-nos nesse mundo criativo!</p>
+ 
+                 <div id="footer_social_media">
+                     <a href="#" class="footer-link" id="instagram">
+                         <i class="fa-brands fa-instagram"></i>
+                     </a>
+ 
+                     <a href="#" class="footer-link" id="facebook">
+                         <i class="fa-brands fa-facebook-f"></i>
+                     </a>
+ 
+                     <a href="#" class="footer-link" id="whatsapp">
+                         <i class="fa-brands fa-whatsapp"></i>
+                     </a>
+                 </div>
+             </div>
+             
+             <ul class="footer-list">
+                 <li>
+                     <h3>Blog</h3>
+                 </li>
+                 <li>
+                     <a href="#profissoes" class="footer-link">profissões</a>
+                 </li>
+                 <li>
+                     <a href="#relevancia-economia" class="footer-link">impacto na economia</a>
+                 </li>
+                 <li>
+                     <a href="#impacto-social" class="footer-link">responsabilidade social</a>
+                 </li>
+                 <li>
+                     <a href="#noticias" class="footer-link">jornadas Inspiradoras</a>
+                 </li>
+             </ul>
+ 
+             <ul class="footer-list">
+                 <li>
+                     <h3>Contatos</h3>
+                 </li>
+                 <li>
+                     <a href="../menu responsivo/contato.html" class="footer-link">Contato</a>
+                 </li>
+                 <li>
+                     <a href="../menu responsivo/cadastro.html" class="footer-link">Cadastre-se</a>
+                 </li>
+                 <li>
+                     <a href="../menu responsivo/login.html" class="footer-link">Faça seu login</a>
+                 </li>
+             </ul>
+ 
+             <div id="footer_subscribe">
+                 <h3>Fique atento aos nossos novos conteúdos!</h3>
+ 
+                 <p>   
+                     Digite seu e-mail para ser notificado sobre
+                     nossas soluções de notícias
+                 </p>
+ 
+                 <div id="input_group">
+                     <input type="email" id="email">
+                     <button>
+                         <i class="fa-regular fa-envelope"></i>
+                     </button>
+                 </div>
+             </div>
+         </div>
+ 
+         <div id="footer_copyright">
+             &#169
+             2023 todos os direitos reservados
+         </div>
+     </footer>
+
+     <script src="assets/js/mode.js"></script>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

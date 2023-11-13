@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/mode.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <title>Menu Responsivo</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="../start/assets/img/logo.png" alt="logo">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="destaques.html" class="nav-link">Destaques</a></li>
+                    <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+                    <li class="nav-item"><a href="us.html" class="nav-link">Sobre nós</a></li>
+                </ul>
+            </div>
+            <div class="dark-mode-icon">
+                <i class="bi bi-brightness-high-fill" id="toggleDark"></i>
+            </div>
+            <div class="btn">
+                <a href="../start/login.html"><button class="login-btn">Login</button></a>
+                <a href="../start/cadastro.html"> <button class="cadastro-btn">Cadastro</button></a>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt="icon"></button>
+            </div>
+    
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="destaques.html" class="nav-link">Destaques</a></li>
+                <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+                <li class="nav-item"><a href="us.html" class="nav-link">Sobre nós</a></li>
+                 
+            </ul>
+        </div>
+    </header>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+     var docWidth = document.documentElement.offsetWidth;
+     [].forEach.call(
+         document.querySelectorAll('*'),
+         function(el) {
+             if (el.offsetWidth > docWidth) {
+                 console.log(el);
+             }
+         }
+     );
+ });
+ </script>
+
+    <main>
+            <section id="home">
+
+                <div class="inicio">
+    
+                    <div class="home">
+        
+                        <h1>Bem-vindo à nossa Plataforma de <span>Economia Criativa!</span></h1>
+        
+                        <p>Juntos, moldaremos o futuro da economia criativa, onde cada ideia tem o potencial de florescer. Seja parte desta jornada, onde a criatividade é o combustível que impulsiona o amanhã.</p>
+
+                        <a href="destaques.html"> <button class="vermais-btn">Ver mais</button></a>
+        
+                    </div>
+        
+                    <div class="h-img">
+                        <img id="home-img" src="../start/assets/img/img-inicio.png" alt="entrada">
+                    </div>
+        
+                </div>
+            </section>
+        
+    </main>
+
+    <script src="assets/js/mode.js"></script>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

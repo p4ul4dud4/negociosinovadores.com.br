@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/mode.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/us.css">
+    <title>Menu Responsivo</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="../start/assets/img/logo.png" alt="logo">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="destaques.html" class="nav-link">Destaques</a></li>
+                    <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+                    <li class="nav-item"><a href="us.html" class="nav-link">Sobre nós</a></li>
+                </ul>
+            </div>
+            <div class="dark-mode-icon">
+                <i class="bi bi-brightness-high-fill" id="toggleDark"></i>
+            </div>
+            <div class="btn">
+                <a href="../start/login.html"><button class="login-btn">Login</button></a>
+                <a href="../start/cadastro.html"> <button class="cadastro-btn">Cadastro</button></a>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt="icon"></button>
+            </div>
+    
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="destaques.html" class="nav-link">Destaques</a></li>
+                <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+                <li class="nav-item"><a href="us.html" class="nav-link">Sobre nós</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+     var docWidth = document.documentElement.offsetWidth;
+     [].forEach.call(
+         document.querySelectorAll('*'),
+         function(el) {
+             if (el.offsetWidth > docWidth) {
+                 console.log(el);
+             }
+         }
+     );
+ });
+ </script> 
+
+    <main>
+
+        <div class="sobre-back">
+            <div class="titulo-sobre">
+                <h1>Sobre nós</h1>
+            </div>
+        </div>
+
+        <div class="descricao-sobre">
+            <p>Bem-vindo à nossa comunidade apaixonada por explorar a jornada criativa e destacar sua relevância na economia. Nos dedicamos a divulgar a importância desse meio de maneira didática. Comprometemo-nos a abordar os tópicos de forma acessível. Ao longo dessa jornada, buscamos exemplificar conquistas na economia criativa. Junte-se a nós para explorar, aprender e construir juntos, moldando o futuro.</p>
+        </div>
+
+        <div class="apresentacoes">
+
+            <div class="row">
+                <h3 id="title-duda">Olá eu sou <span>Maria Eduarda</span></h3>
+                <p>Como desenvolvedora, líder de equipes com paixão, unindo gestão, design e organização. Acredito na importância de uma estética envolvente, por isso mergulho na criação de designs únicos. Minha experiência não se limita à superfície; estou me dedicando à construção de bancos de dados robustos que sustentam a eficiência dos sistemas. Na arte da obtenção, encontro a linguagem para traduzir ideias em soluções práticas e eficazes. Ao guiar meu grupo, busco não apenas cumprir metas, mas inspirar inovação coletiva. Junte-se a mim nessa jornada, onde exploramos, aprendemos e construímos juntos, moldando o futuro com cada linha de código.</p>
+                <img id="img-duda" src="../start/assets/img/profile-duda.png" alt="duda">
+            </div>
+
+            <div class="row-reverse">
+                <h3 id="title-Louise">Olá eu sou <span>Maria Louise</span></h3>
+                <img id="img-louise" src="../start/assets/img/profile-louise.png" alt="louise">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, vitae quos assumenda doloribus laudantium ullam id hic dolor cumque suscipit nobis, aliquid dolorem ad quo delectus tempora deserunt rerum sed.</p>
+            </div>
+
+            <div class="row" id="title-eduardo">
+                <h3 id="">Olá eu sou <span>Eduardo</span></h3>
+                <p>Olá, eu sou Eduardo e contribuí para a equipe ao trabalhar na área de backend no desenvolvimento do site. Além disso, desenvolvi um papel importante ao auxiliar no design e na estrutura do projeto. Minha participação abrange múltiplos aspectos, colaborando para garantir um site bem estruturado e funcional.</p>
+                <img id="img-eduardo" src="../start/assets/img/profile-eduardo.png" alt="eduardo">
+            </div>
+
+            <div class="row-reverse">
+                <h3 id="title-cauan">Olá eu sou <span>Cauan</span></h3>
+                <img id="img-cauan" src="../start/assets/img/profile-cauan.png" alt="cauan">
+                <p>Durante o período em que me envolvi em pesquisa, pude contribuir de maneira significativa para a criação de um banco de dados valioso. Minha participação envolveu coleta, organização e análise de dados, garantindo que as informações estivessem precisas e atualizadas. Trabalhando em estreita colaboração com uma equipe dedicada, conseguimos estruturar os dados de forma eficaz, criando um banco de dados robusto que se tornou uma ferramenta essencial para pesquisadores e profissionais em nosso campo.</p>
+            </div>
+        </div> 
+
+    </main>
+
+    <footer>
+ 
+        <div id="footer_content">
+    
+            <div id="footer_contacts">
+                <h1>Logo</h1>
+                <p>Acompanhes-nos nesse mundo criativo!</p>
+    
+                <div id="footer_social_media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+    
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+    
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <ul class="footer-list">
+                <li>
+                    <h3>Blog</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">profissões</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">impacto na economia</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">responsabilidade social</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">jornadas Inspiradoras</a>
+                </li>
+            </ul>
+    
+            <ul class="footer-list">
+                <li>
+                    <h3>Contatos</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Como posso ajudar?</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Cadastre-se</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Faça seu login</a>
+                </li>
+            </ul>
+    
+            <div id="footer_subscribe">
+                <h3>Fique atento aos nossos novos conteúdos!</h3>
+    
+                <p>   
+                    Digite seu e-mail para ser notificado sobre
+                    nossas soluções de notícias
+                </p>
+    
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    
+        <div id="footer_copyright">
+            &#169
+            2023 todos os direitos reservados
+        </div>
+    </footer>    
+
+    <script src="assets/js/mode.js"></script>
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
