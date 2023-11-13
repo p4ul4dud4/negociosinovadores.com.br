@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+ 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+:root{
+    --background: #4894f0;
+    --card:  #fff;
+    --primary: #d8a31a;
+    --placeholder: #000000be;
+}
+
+.dark-mode{
+    --background: #1353a1;
+    --card:  #e9e9e9;
+    --primary: #ddad32;
+}
+ 
+ 
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    background: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.switch{
+    cursor: pointer;
+}
+
+.left-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+ 
+.left-login-img {
+    width: 35vw;  
+}
+ 
+.right-login {
+    width: 50vw;
+    height: 100vh;
+    background: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.card-login {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color: var(--card);
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000057;
+}
+ 
+.card-login {
+    color: var(--primary);
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield > input{
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 6px #0000001c;
+}
+
+.textfield > input::placeholder {
+    color: var(--placeholder);
+}
+
+.textfield > input:hover{
+    background-color: #eeeeee75;
+}
+
+.textfield >input:focus-visible{
+    outline: 1px solid  var(--primary) ;
+}
+ 
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+ 
+.btn-login {
+    width: 100%;
+    margin-top: 2.5rem;
+    padding: 15px 0px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    background: var(--primary);
+    border-radius: 10px;
+    cursor: pointer;
+}
+ 
+.btn-login:hover {
+    transform: scale(0.95);
+    transition: all 1s;
+}
+
+.btn-login a{
+    text-decoration: none;
+    color: var(--card);
+}
+
+.voltar a{
+    text-decoration: none;
+    color: red;
+    cursor: pointer;
+    font-size: 12px;
+}
+ 
+@media only screen and (max-width: 940px) {
+    .card-login {
+        width: 85%;
+    }
+}
+ 
+@media only screen and (max-width: 600px) {
+    .main-login {
+        flex-direction: column;
+    }
+ 
+    .left-login {
+        width: 100vw;
+        height: auto; 
+    }
+ 
+    .left-login-img {
+        width: 70vw;
+    }
+ 
+    .right-login {
+        width: 90vw;
+        height: auto;
+    }
+ 
+}
+
+@media screen and (max-width: 425px) {
+    h1{
+        font-size: 20px;
+    }
+}

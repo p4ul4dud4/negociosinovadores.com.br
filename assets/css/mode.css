@@ -1,0 +1,7 @@
+.dark-mode-icon{
+    color: #D8A31A;
+    margin-top: 5px;
+    font-size: 25px;
+    cursor: pointer;
+    transform: translate(-5%, -5%);
+}

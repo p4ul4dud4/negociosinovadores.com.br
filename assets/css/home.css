@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    background-color: #002774;
+    box-shadow: 0px 3px 5px #464646;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    height: 5px;
+    width: 5px;
+    margin-top: 15px;
+    margin-right: 15%;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+}  
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.inicio {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home {
+    display: inline-block;
+    width: 50%;
+}
+
+.h-img{
+    margin-top: 15%;
+}
+
+.home .vermais-btn { 
+    margin-top: 25px; 
+}
+
+.vermais-btn{
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.login-btn,
+.cadastro-btn {
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #c79413;
+    color: #fff;
+}
+
+.cadastro-btn {
+    background-color: #D8A31A;
+    color: #fff;
+}
+
+.cadastro-btn:hover {
+    background-color: #eeba36;
+}
+
+.vermais-btn:hover{
+    background-color: #002774;
+    color: #fff;
+}
+
+
+.mobile-menu-icon,
+.mobile-menu {
+    display: none;
+}
+
+.home h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+span {
+    color: #D8A31A;
+}
+
+.home p {
+    line-height: 22px;
+    margin-top: 5px;
+}
+
+
+@media (min-width:1440px) {
+
+    .inicio {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home{
+        margin-top: 20%;
+    }
+}
+
+@media screen and (max-width:1330px){
+    .home {
+        margin-top: 25%;
+        min-height: auto;
+    }
+}
+
+@media screen and (max-width:1010px) {
+    .inicio{
+        margin-left: 2%;
+    }
+}
+
+@media screen and (max-width:960px){
+    .home{
+        width: 80%;
+    }
+
+    #home-img{
+    width: 90%;
+    }
+
+    .h-img{
+        margin-left: 40px;
+    }
+
+    .login-btn,
+    .cadastro-btn{
+        padding: 5px;
+        margin-top: 5px;
+    }
+
+    .dark-mode-icon{
+        margin-left: 2.5%;
+    }
+}
+
+@media screen and (max-width:890px){
+
+    .btn {
+        margin-left: 10%;
+    }
+
+    .dark-mode-icon{
+        margin-top: 2.5%;
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 842px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+
+    main{
+        width: 100%;
+    }
+
+    .h-img{
+        display: none;
+    }
+    .inicio{
+        width: 100%;
+    }
+
+    .login-btn,
+    .cadastro-btn{
+        display: none;
+}
+
+    .dark-mode-icon{
+        margin-left: 70%;
+        margin-top: 0.5%;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .logo {
+        margin-left: -10%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+   .inicio h1{
+        font-size: 45px;
+    }
+
+    .logo {
+        margin-left: -15%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .inicio h1{
+         font-size: 40px;
+     }
+
+     .inicio p{
+        font-size: 15px;
+     }
+ }
+
+@media screen and (max-width: 350px) {
+
+    .logo{
+        margin-left: -40%;
+    }
+
+    .dark-mode-icon{
+        margin-left: 95%;
+    }
+}
